@@ -8,7 +8,7 @@ Born in Korea, I studied Industrial Engineering & Statistics at Yonsei Universit
 
 In my senior year, I concluded that statistics is the only and the most potent discipline that could incorporate my knowledge. These personal experiences soon led me to an ambition: I wanted to integrate modern machine learning as a general statistics framework. Please visit my "Research & Presentation" or "Project" if you want to know more.  
 
-I seek advantages from both perspectives: As a Statistician and an Engineer. My loving topics are bayesian probabilistic modeling, variational inference, and deep probabilistic models. 
+I seek advantages from both perspectives: As a Statistician and as an Engineer. My loving topics are Bayesian probabilistic modeling, variational inference, and deep probabilistic models. 
 
 However, I enjoy talking about literally **every topic**. 
 
