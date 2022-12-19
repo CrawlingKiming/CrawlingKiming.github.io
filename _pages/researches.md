@@ -5,7 +5,7 @@ permalink: /Researches/
 author_profile: true
 ---
 
-# Fast Compartment Calibration Using Annealed and Transformed Variational Inference
+## Fast Compartment Calibration Using Annealed and Transformed Variational Inference
 
 >[Arxiv](http://arxiv.org/abs/2211.12200)
 > 
