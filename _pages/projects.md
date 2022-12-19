@@ -21,7 +21,14 @@ Our goal is to develop a gridding algorithm, incorporating uncertainty within th
 >[GitHub](https://github.com/CrawlingKiming/DivingTopics)
 <hr/>
 
-I worked with the LG Display team as a researcher of topic modeling-based patent mining. With these skills, I proposed a business operation based on topic modeling, which was selected for an oral presentation at the 2019 Big Data Contest.
+<hr/>
+<p align="center"><img src="/assets/img/Topics.PNG" width="80%" height="60%" title="ATVI Outline" alt="RubberDuck" /></p>
+
+
+I worked with the LG Display team as a researcher of topic modeling-based patent mining. With these skills, I proposed a
+business operation based on topic modeling, which was selected for an oral presentation at the 2019 Big Data Contest.
+
+The proposed method incorporates LDA topic modeling and Korean NLP skills. 
 
 ## Solving Multi-Modal High-Dimensional Inverse Problems using Partition Flows
 <p align="center"><img src="/assets/img/ConditionalSampling.PNG" width="80%" height="60%" title="ATVI Outline" alt="RubberDuck" /></p>
