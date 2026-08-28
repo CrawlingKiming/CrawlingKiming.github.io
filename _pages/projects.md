@@ -1,47 +1,32 @@
 ---
-title: "Projects"
+title: "Professional Experience"
 layout: posts
-permalink: /year-archive/
+permalink: /experience/
 author_profile: true
 ---
 
-## Optimal Logistics Using Constrained Reinforcement Learning
+## Apple Foundation Models | Research Intern
 
-Working with Duke and NCSU collaborators, I developed a constrained reinforcement-learning approach for large-scale vehicle-routing and network decisions. The project used more than 100,000 vehicle-movement records across 2,500+ farms and achieved a 32% reduction in infections using approximately 2% normalized cost under the stated budget constraint.
+*May 2026 - August 2026*
 
-## Geospatial Gridding Algorithm 
+Worked on reinforcement learning for frontier LLMs. I proposed a training algorithm, led end-to-end training and ablations, and investigated optimization stability in large-scale post-training.
 
->[GitHub](https://github.com/CrawlingKiming/GEMS_python)
+## AWS GenAI | Data Scientist Intern
 
-<hr/>
-<p align="center"><img src="/assets/img/GEMS_Regridding.gif" width="80%" height="60%" title="ATVI Outline" alt="RubberDuck" /></p>
+*May 2025 - August 2025*
 
-In this project, I worked with the National Institute of Environmental Research (NIER) in Korea to implement geospatial grid algorithms for the Geostationary Environmental Monitoring Spectrometer (GEMS).
+Designed and implemented a reinforcement-learning framework for safe LLM fine-tuning on AWS GPU infrastructure. I built training, evaluation, and ablation pipelines; the resulting work was published at AAAI.
 
-Our goal is to develop a gridding algorithm, incorporating uncertainty within the algorithm with enhanced efficiency. 
+## National Institute of Environmental Research (NIER) | Research Assistant
 
-## Topic Modeling and Patent Mining 
+*May 2022 - December 2022*
 
->[GitHub](https://github.com/CrawlingKiming/DivingTopics)
-<hr/>
+Developed geospatial grid algorithms for the Geostationary Environmental Monitoring Spectrometer (GEMS). The work improved computational efficiency while incorporating uncertainty into the processing pipeline.
 
-<hr/>
-<p align="center"><img src="/assets/img/Topics.PNG" width="80%" height="60%" title="ATVI Outline" alt="RubberDuck" /></p>
+<p align="center"><img src="/assets/img/GEMS_Regridding.gif" width="80%" height="60%" title="GEMS regridding" alt="GEMS regridding" /></p>
 
+## Duke University | Research Assistant
 
-I worked with the LG Display team as a researcher of topic modeling-based patent mining. With these skills, I proposed a
-business operation based on topic modeling, which was selected for an oral presentation at the 2019 Big Data Contest.
+*May 2024 - December 2025*
 
-The proposed method incorporates LDA topic modeling and Korean NLP skills. 
-
-## Solving Multi-Modal High-Dimensional Inverse Problems using Partition Flows
-<p align="center"><img src="/assets/img/ConditionalSampling.PNG" width="80%" height="60%" title="ATVI Outline" alt="RubberDuck" /></p>
-
-
-In Many scientific applications, researchers may infer high dimensional data from observable
-result with known forward model. Thus, how observed data is determined by unknown true data
-is well known. However, the converse is not generally true. Inferring is ambiguous, and this
-encounters high-dimensional multi-modal distributions. 
-
-To overcome challenges of the task, I propose a partition flow, which overcomes the limitations of the
-traditional methods using deep generative modeling that utilizes sub partitions of the domain.
+Developed a constrained reinforcement-learning approach for large-scale vehicle-routing and network decisions. The project used more than 100,000 vehicle-movement records across 2,500+ farms and achieved a 32% reduction in infections using approximately 2% normalized cost under the stated budget constraint.
