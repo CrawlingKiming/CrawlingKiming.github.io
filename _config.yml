@@ -12,21 +12,21 @@
 
 # theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "mint" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "air" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale                   : "en-US"
-title                    : "DongKyu Cho Website"
+title                    : "Derek Cho"
 title_separator          : "-"
-subtitle                 : # site tagline that appears below site title in masthead
-name                     : "DongKyu, Cho"
-description              : "My personal website"
-url                      : "https://CrawlingKiming.github.io"# the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
-baseurl                  : ""# the subpath of your site, e.g. "/blog"
-repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+subtitle                 : "Reinforcement learning, LLMs, and Bayesian inference"
+name                     : "Derek Cho"
+description              : "Derek Cho is a statistical machine learning researcher working on reinforcement learning, large language models, and Bayesian inference."
+url                      : "https://crawlingkiming.github.io"
+baseurl                  : # the subpath of your site, e.g. "/blog"
+repository               : "CrawlingKiming/CrawlingKiming.github.io"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
-masthead_title           : "Debugging Statistician" # overrides the website title displayed in the masthead, use " " for no title
+masthead_title           : "Derek Cho" # overrides the website title displayed in the masthead, use " " for no title
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
 comments:
@@ -59,7 +59,7 @@ reCaptcha:
 atom_feed:
   path                   : # blank (default) uses feed.xml
   hide                   : # true, false (default)
-search                   : # true, false (default)
+search                   : true
 search_full_content      : # true, false (default)
 search_provider          : # lunr (default), algolia, google
 lunr:
@@ -90,9 +90,11 @@ og_image                 : # Open Graph/Twitter default site image
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
-  type                   : # Person or Organization (defaults to Person)
-  name                   : # If the user or organization name differs from the site's name
-  links: # An array of links to social media profiles
+  type                   : Person
+  name                   : Derek Cho
+  links:
+    - "https://github.com/CrawlingKiming"
+    - "https://www.linkedin.com/in/dongkyu-cho-463484170/"
 
 # Analytics
 analytics:
@@ -104,33 +106,42 @@ analytics:
 
 # Site Author
 author:
-  name             : "DongKyu Cho"
-  avatar           : "/assets/img/ped.jpg"# path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "An Ambitious Statistician"
-  location         : "Republic of Korea"
+  name             : "Derek Cho"
+  avatar           : "/assets/img/myheadshot.jpg"
+  bio              : "Ph.D. candidate in Statistical Science at Duke University. I study reliable, statistically grounded learning systems."
+  location         : "Durham, North Carolina"
   email            : "dkcho819@gmail.com"
+  linkedin         : "dongkyu-cho-463484170"
+  github           : "CrawlingKiming"
   links:
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/CrawlingKiming"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      # url: "https://instagram.com/"
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
-      url: mailto:dkcho819@gmail.com
+    - label: "Research"
+      icon: "fas fa-fw fa-flask"
+      url: "/research/"
+    - label: "Publications"
+      icon: "fas fa-fw fa-book-open"
+      url: "/publications/"
+
 # Site Footer
 footer:
   links:
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:dkcho819@gmail.com"
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      # url:
+    - label: "Facebook"
+      icon: "fab fa-fw fa-facebook-square"
+      # url:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/CrawlingKiming"
+      # url:
+    - label: "GitLab"
+      icon: "fab fa-fw fa-gitlab"
+      # url:
+    - label: "Bitbucket"
+      icon: "fab fa-fw fa-bitbucket"
+      # url:
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-      # url: "https://instagram.com/"
+      # url:
 
 
 # Reading Files
@@ -200,7 +211,7 @@ sass:
 # Outputting
 permalink: /:categories/:title/
 paginate: 5 # amount of posts to show
-paginate_path: page:num
+paginate_path: /page:num/
 timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 
