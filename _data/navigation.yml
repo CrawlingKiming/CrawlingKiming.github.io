@@ -1,12 +1,10 @@
 # main links
 main:
-  - title: "Research"
-    url: /research/
-  - title: "Publications"
-    url: /publications/
-  - title: "Experience"
-    url: /experience/
-  - title: "Projects"
+  - title: "About"
+    url: /about/
+  - title: "Research & Presentation"
+    url: /Researches/
+  - title: "Project"
     url: /year-archive/
-  - title: "CV"
-    url: /cv/
+#  - title: "Sample Collections"
+#    url: /collection-archive/

@@ -1,25 +1,64 @@
 ---
-layout: single
+layout: splash
 author_profile: true
-title: "Statistical machine learning for reliable decision-making"
 permalink: /
+hidden: true
+header:
+  overlay_color: "#355c7d"
+
+excerpt: >
+  An Engineering Statistician, <br />
+  <big>Ph.D. student at Duke University</big>
+
+feature_row:
+  - image_path: assets/img/myheadshot.jpg
+    alt: "customizable"
+    title: "About Me"
+    excerpt: >
+      *Ph.D. student in Statistics* <br/>
+      *B.A. in Statistics & B.E. in Industrial Engineering* <br />
+
+      - Graduated with **High Honors (1<sup>st</sup>)** <br />
+
+      - **Best Paper (1<sup>st</sup>) Awards** <span style="font-size:100%">at Korean Statistics Society</span> <br />
+
+      - **Best Paper (1<sup>st</sup>) Awards** <span style="font-size:100%">at Brain Korea Conference</span> <br />
+
+    url: "/about/"
+    btn_class: "btn--primary"
+    btn_label: "CV & About Me"
+
+  - image_path: assets/img/TheCores.jpg
+    alt: "customizable"
+    title: "Research & Presentation"
+    excerpt: >
+      Broadly speaking, my work aims to develop a new methodology at the intersections of theoretical and practical
+      aspects of machine learning and Bayesian probabilistic modeling. <br />
+      My work mainly focuses on: <br />
+      - Reinforcement learning <br />
+      - Bayesian Optimization (black-box optimization) <br/>
+      - Variational Infernce <br />
+
+    url: "/Researches/"
+    btn_class: "btn--primary"
+    btn_label: "Learn more"
+
+  - image_path: assets/img/GEMS_Regridding.gif
+    alt: "customizable"
+    title: "Projects"
+    excerpt: >
+      Research Projects in Corporations with Government and Business & Small Projects  <br />
+
+      - Satellite Novel Gridding Algorithm : Worked with the National Institute of Environmental Research in Korea
+
+      - Topic modeling : LG Display & 2019 Big Data Contest
+
+      - Mutli-Modal, High-Dimensional Inverse Problems
+
+    url: "/year-archive/"
+    btn_class: "btn--primary"
+    btn_label: "Learn more"
+
 ---
 
-I am a Ph.D. candidate in Statistical Science at Duke University. My research sits at the intersection of reinforcement learning, large language models, and Bayesian inference. I build learning methods that are both practically useful and statistically principled - from stable policy optimization to efficient personalization for LLMs.
-
-## What I work on
-
-**Reliable reinforcement learning.** I study optimization stability, robust policy updates, and finite-time guarantees for average-reward and off-policy learning.
-
-**LLM post-training and alignment.** My work develops reinforcement-learning methods for reasoning, safety, and data-efficient personalization of large language models.
-
-**Bayesian machine learning.** I design efficient inference and uncertainty-aware decision methods for scientific and operational problems.
-
-## Recent highlights
-
-- Research intern with Apple Foundation Models, working on reinforcement learning for frontier LLMs (2026).
-- Developed a reinforcement-learning framework for safe LLM fine-tuning at AWS GenAI; the work appeared at AAAI (2026).
-- First author of *Implicit Updates for Average-Reward TD Learning* at AISTATS (2026).
-- Published efficient variational-inference work in the *Journal of Computational and Graphical Statistics* (2025).
-
-Explore my [research](/research/), [publications](/publications/), and [experience](/experience/), or get in touch by [email](mailto:dkcho819@gmail.com).
+{% include feature_row %}

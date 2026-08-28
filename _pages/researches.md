@@ -5,6 +5,17 @@ permalink: /Researches/
 author_profile: true
 ---
 
+## Recent Research
+
+My recent work focuses on reliable reinforcement learning and LLM post-training.
+
+- **Stable average-reward reinforcement learning.** Developed an algorithm with a finite-time convergence guarantee and validated it in operations-research and robotic-control simulations; published at AISTATS 2026.
+- **Reliable policy optimization.** Studied heavy-tailed policy-ratio distributions and developed an order-statistics-based approach for robust policy updates; under review at NeurIPS 2026.
+- **Safe and personalized LLMs.** Developed reinforcement-learning approaches for safety-preserving LLM fine-tuning and data-efficient personalization through meta-learned reward modeling.
+- **Bayesian inference and uncertainty.** Continued work on efficient variational inference and uncertainty-aware active learning for scientific problems.
+
+The earlier variational-inference project below remains a central part of my research trajectory.
+
 ## Fast Compartment Calibration Using Annealed and Transformed Variational Inference
 
 >[Arxiv](http://arxiv.org/abs/2211.12200)

@@ -5,6 +5,10 @@ permalink: /year-archive/
 author_profile: true
 ---
 
+## Optimal Logistics Using Constrained Reinforcement Learning
+
+Working with Duke and NCSU collaborators, I developed a constrained reinforcement-learning approach for large-scale vehicle-routing and network decisions. The project used more than 100,000 vehicle-movement records across 2,500+ farms and achieved a 32% reduction in infections using approximately 2% normalized cost under the stated budget constraint.
+
 ## Geospatial Gridding Algorithm 
 
 >[GitHub](https://github.com/CrawlingKiming/GEMS_python)
