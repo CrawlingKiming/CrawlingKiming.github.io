@@ -9,11 +9,15 @@ author_profile: true
 
 *May 2026 - August 2026*
 
+<img src="/assets/img/logos/apple.svg" alt="Apple logo" width="56" />
+
 Worked on reinforcement learning for frontier LLMs. I proposed a training algorithm, led end-to-end training and ablations, and investigated optimization stability in large-scale post-training.
 
 ## AWS GenAI | Data Scientist Intern
 
 *May 2025 - August 2025*
+
+<img src="/assets/img/logos/aws.svg" alt="AWS logo" width="130" />
 
 Designed and implemented a reinforcement-learning framework for safe LLM fine-tuning on AWS GPU infrastructure. I built training, evaluation, and ablation pipelines; the resulting work was published at AAAI.
 
