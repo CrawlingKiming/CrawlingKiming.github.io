@@ -10,9 +10,6 @@ My research develops statistically grounded machine-learning methods that remain
 
 <div class="research-focus-list">
   <section class="research-focus">
-    <div class="research-focus__image research-focus__image--logo">
-      <img src="/assets/img/apple-experience-card.svg" alt="Apple Machine Learning Research" />
-    </div>
     <div class="research-focus__body">
       <h2>Reliable Reinforcement Learning</h2>
       <p>I study how to make reinforcement learning stable and dependable, from implicit temporal difference methods with finite time guarantees to policy optimization with robust gradient estimators and large scale reinforcement learning for frontier models.</p>
@@ -25,9 +22,6 @@ My research develops statistically grounded machine-learning methods that remain
   </section>
 
   <section class="research-focus">
-    <div class="research-focus__image">
-      <img src="/assets/img/research-hero-2026.png" alt="Abstract landscape representing safe and personalized machine learning" />
-    </div>
     <div class="research-focus__body">
       <h2>Safe and Personalized LLMs</h2>
       <p>I develop reinforcement-learning and Bayesian approaches that preserve safety guardrails during LLM adaptation while learning individual preferences efficiently from limited and heterogeneous feedback.</p>
@@ -39,9 +33,6 @@ My research develops statistically grounded machine-learning methods that remain
   </section>
 
   <section class="research-focus">
-    <div class="research-focus__image">
-      <img src="/assets/img/Post_Conf2.jpg" alt="Dongkyu Derek Cho presenting research on Bayesian model calibration" />
-    </div>
     <div class="research-focus__body">
       <h2>Bayesian Inference &amp; Uncertainty</h2>
       <p>I build scalable Bayesian inference and uncertainty-quantification methods for scientific problems, with work spanning fast computer-model calibration and uncertainty-aware prediction for low-dimensional hybrid metal halides.</p>
