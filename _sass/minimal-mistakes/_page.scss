@@ -576,3 +576,113 @@ body {
     }
   }
 }
+
+/*
+   Research overview
+   ========================================================================== */
+
+.research-focus-list {
+  margin-top: 1.75rem;
+}
+
+.research-focus {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
+  align-items: stretch;
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  background: #fff;
+  border: 1px solid rgba($border-color, 0.85);
+  border-radius: 0.85rem;
+  box-shadow: 0 0.45rem 1.35rem rgba(#000, 0.07);
+
+  @include breakpoint($small) {
+    grid-template-columns: minmax(11rem, 0.8fr) minmax(0, 1.7fr);
+    gap: 1.5rem;
+
+    &:nth-child(even) {
+      grid-template-columns: minmax(0, 1.7fr) minmax(11rem, 0.8fr);
+
+      .research-focus__image {
+        grid-column: 2;
+        grid-row: 1;
+      }
+
+      .research-focus__body {
+        grid-column: 1;
+        grid-row: 1;
+      }
+    }
+  }
+}
+
+.research-focus__image {
+  min-height: 12rem;
+  overflow: hidden;
+  background: mix(#fff, $background-color, 68%);
+  border-radius: 0.6rem;
+
+  @include breakpoint($small) {
+    min-height: 15rem;
+  }
+
+  img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &--logo img {
+    padding: 1.25rem;
+    object-fit: contain;
+  }
+}
+
+.research-focus__body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0.35rem 0.25rem;
+
+  h2 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+  }
+
+  p {
+    margin-bottom: 1rem;
+  }
+}
+
+.research-focus__papers {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+
+  a,
+  span {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.4rem 0.65rem;
+    font-size: $type-size-7;
+    line-height: 1.35;
+    color: $text-color;
+    text-decoration: none;
+    background: mix(#fff, $primary-color, 90%);
+    border: 1px solid mix(#fff, $primary-color, 70%);
+    border-radius: 999px;
+  }
+
+  a:hover {
+    color: #fff;
+    background: $primary-color;
+    border-color: $primary-color;
+  }
+
+  .research-focus__paper--primary {
+    font-weight: 700;
+    border-color: mix(#fff, $primary-color, 45%);
+  }
+}

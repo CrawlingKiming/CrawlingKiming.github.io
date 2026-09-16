@@ -3,65 +3,52 @@ title: "Research"
 layout: posts
 permalink: /Researches/
 author_profile: true
+description: "Research by Dongkyu Derek Cho on reliable reinforcement learning, safe and personalized LLMs, and Bayesian inference and uncertainty quantification."
 ---
 
-## Recent Research
+My research develops statistically grounded machine-learning methods that remain reliable under optimization instability, limited feedback, and scientific uncertainty.
 
-My recent work focuses on reliable reinforcement learning and LLM post-training.
+<div class="research-focus-list">
+  <section class="research-focus">
+    <div class="research-focus__image research-focus__image--logo">
+      <img src="/assets/img/apple-experience-card.svg" alt="Apple Machine Learning Research" />
+    </div>
+    <div class="research-focus__body">
+      <h2>Reliable Reinforcement Learning</h2>
+      <p>I study how to make reinforcement learning stable and dependable, from implicit temporal difference methods with finite time guarantees to policy optimization with robust gradient estimators and large scale reinforcement learning for frontier models.</p>
+      <div class="research-focus__papers" aria-label="Related work">
+        <a href="https://proceedings.mlr.press/v300/kim26b.html">AISTATS 2026: Implicit Updates for Average-Reward Temporal Difference Learning (First author)</a>
+        <span>NeurIPS 2026: Ordered Policy Optimization (First author)</span>
+        <span>Apple Machine Learning Research 2026: Rethinking Policy Optimization with Gradient Estimators (First author)</span>
+      </div>
+    </div>
+  </section>
 
-- **Stable average-reward reinforcement learning.** Developed an algorithm with a finite-time convergence guarantee and validated it in operations-research and robotic-control simulations; published at AISTATS 2026.
-- **Reliable policy optimization.** Studied heavy-tailed policy-ratio distributions and developed an order-statistics-based approach for robust policy updates; under review at NeurIPS 2026.
-- **Safe and personalized LLMs.** Developed reinforcement-learning approaches for safety-preserving LLM fine-tuning and data-efficient personalization through meta-learned reward modeling.
-- **Bayesian inference and uncertainty.** Continued work on efficient variational inference and uncertainty-aware active learning for scientific problems.
+  <section class="research-focus">
+    <div class="research-focus__image">
+      <img src="/assets/img/research-hero-2026.png" alt="Abstract landscape representing safe and personalized machine learning" />
+    </div>
+    <div class="research-focus__body">
+      <h2>Safe and Personalized LLMs</h2>
+      <p>I develop reinforcement-learning and Bayesian approaches that preserve safety guardrails during LLM adaptation while learning individual preferences efficiently from limited and heterogeneous feedback.</p>
+      <div class="research-focus__papers" aria-label="Related work">
+        <a href="https://arxiv.org/abs/2511.21050">AAAI 2026 Workshop: Breaking the Safety-Capability Tradeoff (First author)</a>
+        <span>PrefBayes: Bayesian preference modeling for personalized LLMs (First author)</span>
+      </div>
+    </div>
+  </section>
 
-The earlier variational-inference project below remains a central part of my research trajectory.
-
-## Fast Compartment Calibration Using Annealed and Transformed Variational Inference
-
->[Arxiv](http://arxiv.org/abs/2211.12200)
-> 
->[GitHub](https://github.com/CrawlingKiming/AdVI)
-
-<hr/>
-<p align="center"><img src="/assets/img/Model_Outline4.PNG" width="80%" height="60%" title="ATVI Outline" alt="RubberDuck" /></p>
-
-Compared to the standard MCMC algorithms, VI approaches scale well to larger datasets or high-dimensional problems. Furthermore, with the well-trained NF model, we can construct a complicated form of variational distribution without depending on restrictive parametric assumptions. However, the direct application of these methods to compartment model calibration is challenging due to the following reasons:
-
-- Parameter Constraints 
-
-The support of approximate distribution should be inside the constrained parameter space. The standard VI suffers from boundary effect problems due to parameter constraints in compartment models. The most common approach is to use "bijective transformation", however, it truncates the posterior near the parameter constraints. This is especially problemetic at the calibration tasks, as parameter constraints are frequently used. 
-
-- Poor local optmia 
-
-If the approximate density does not cover (i.e., mismatch) all of the high-density regions of the target at the beginning
-of the training, the mismatched region may never be discovered during optimization. 
-Although several alternatives or employing different divergences have been proposed, they are computationally expensive and require some simplifying assumptions in the form of variational density.
-
-We propose a Novel Framework: **Annealed and Transformed Variational Inference (ATVI)**, fusing modern advancements of MCMC, deep learning, and variational inference. 
-
-### ATVI
-
-- Boundary Surjection 
-
-<p align="center"><img src="/assets/img/BoundarySurjection.PNG" width="120%" height="90%" title="BS smaple" alt="RubberDuck" /></p>
-
-Here, I propose a novel transformation, **boundary surjection**, that deals the first issue.
-
-A mapping between unconstrained space and constrained space, is a deterministic one side and probabilistic mapping 
-on the other side. With the proposed conditons and theoretical justifications, the boundary surjection is easy to implement, and deals boundary truncation. (See Section 4.1 and 4.2 for more details)
-
-
-- Sequentially Annealed Posteriors 
-
-Here, I propose a new temperature annealing scheme. Unlike other temperature annealing shcemes, it is an natural extension of the deep generative model, normalizing flow. 
-
-Main idea is to introduce a block layer, a composite of multiple NF layers, that targets annealed target distribution. The block itself, is not a target distribution. However, a *composite* of block layers, becomes a target distribution. 
-
-We sequentially train each block. At the end of the training, the compostie of sequentailly trained blocks becomes the target distribution. See theoretical details in Section 4.3. 
-
-
-### Result 
-
-<p align="center"><img src="/assets/img/ATVI_Comparision.PNG" width="120%" height="90%" title="BS smaple" alt="RubberDuck" /></p>
-
-While MCMC took 15 hours, ATVI recovered true posterior within two hours, perserving its reliability. 
+  <section class="research-focus">
+    <div class="research-focus__image">
+      <img src="/assets/img/Post_Conf2.jpg" alt="Dongkyu Derek Cho presenting research on Bayesian model calibration" />
+    </div>
+    <div class="research-focus__body">
+      <h2>Bayesian Inference &amp; Uncertainty</h2>
+      <p>I build scalable Bayesian inference and uncertainty-quantification methods for scientific problems, with work spanning fast computer-model calibration and uncertainty-aware prediction for low-dimensional hybrid metal halides.</p>
+      <div class="research-focus__papers" aria-label="Related work">
+        <a class="research-focus__paper--primary" href="https://doi.org/10.1080/10618600.2024.2374962">JCGS 2025: Fast Computer Model Calibration Using Annealed and Transformed Variational Inference (First author)</a>
+        <a href="https://doi.org/10.1039/D5TA09980C">Journal of Materials Chemistry A 2026: Uncertainty-Aware Dimensionality Prediction (Second author)</a>
+      </div>
+    </div>
+  </section>
+</div>

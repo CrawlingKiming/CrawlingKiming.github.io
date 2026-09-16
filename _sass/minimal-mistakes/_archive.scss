@@ -18,6 +18,92 @@
   }
 }
 
+/* Keep the three homepage features visually balanced without flattening them
+   into rigid boxes on smaller screens. */
+.layout--splash .feature__wrapper {
+  border-bottom: 0;
+
+  .feature__item {
+    display: flex;
+
+    .archive__item {
+      display: flex;
+      flex: 1 1 auto;
+      flex-direction: column;
+      width: 100%;
+      overflow: hidden;
+      background: #fff;
+      border: 1px solid rgba($border-color, 0.8);
+      border-radius: 0.75rem;
+      box-shadow: 0 0.45rem 1.35rem rgba(#000, 0.08);
+      transition: transform 180ms ease, box-shadow 180ms ease;
+    }
+
+    &:hover .archive__item {
+      transform: translateY(-0.2rem);
+      box-shadow: 0 0.75rem 1.75rem rgba(#000, 0.12);
+    }
+
+    .archive__item-teaser {
+      height: 13rem;
+      margin: 0;
+      overflow: hidden;
+      background: mix(#fff, $background-color, 70%);
+
+      img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    &:nth-child(3) .archive__item-teaser img {
+      padding: 1rem;
+      object-fit: contain;
+    }
+
+    .archive__item-body {
+      display: flex;
+      flex: 1 1 auto;
+      flex-direction: column;
+      padding: 1.25rem;
+    }
+
+    .archive__item-excerpt {
+      flex: 1 1 auto;
+    }
+
+    .archive__item-body > p:last-child {
+      margin-top: auto;
+      margin-bottom: 0;
+      padding-top: 0.5rem;
+    }
+  }
+
+  @include breakpoint($small) {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.5rem;
+
+    .feature__item,
+    .feature__item:nth-child(3n + 1),
+    .feature__item:nth-child(3n + 2),
+    .feature__item:nth-child(3n + 3) {
+      float: none;
+      clear: none;
+      width: auto;
+      margin: 0;
+    }
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .layout--splash .feature__wrapper .feature__item .archive__item {
+    transition: none;
+  }
+}
+
 .archive__item {
   position: relative;
 
