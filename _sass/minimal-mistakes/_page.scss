@@ -587,46 +587,71 @@ body {
 
 .research-focus {
   margin-bottom: 1.5rem;
-  padding: 1.4rem 1.5rem;
+  padding: 1.5rem;
   background: #fff;
   border: 1px solid rgba($border-color, 0.85);
+  border-left: 0.3rem solid mix(#fff, $primary-color, 25%);
   border-radius: 0.85rem;
   box-shadow: 0 0.45rem 1.35rem rgba(#000, 0.07);
 }
 
 .research-focus__body {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 0.75rem;
   padding: 0;
 
   h2 {
-    margin-top: 0;
-    margin-bottom: 0.5rem;
+    margin: 0;
+    font-size: $type-size-4;
+    line-height: 1.2;
   }
 
   p {
-    margin-bottom: 1rem;
+    margin: 0 0 0.25rem;
+    line-height: 1.7;
+  }
+
+  @include breakpoint($medium) {
+    grid-template-columns: minmax(10.5rem, 0.75fr) minmax(0, 1.75fr);
+    column-gap: 2rem;
+    row-gap: 0.9rem;
+    align-items: start;
+
+    h2 {
+      grid-column: 1;
+      grid-row: 1 / span 2;
+    }
+
+    p {
+      grid-column: 2;
+      grid-row: 1;
+    }
+
+    .research-focus__papers {
+      grid-column: 2;
+      grid-row: 2;
+    }
   }
 }
 
 .research-focus__papers {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.45rem;
+  display: grid;
+  gap: 0.5rem;
 
   a,
   span {
-    display: inline-flex;
+    display: flex;
     align-items: center;
-    padding: 0.4rem 0.65rem;
+    width: 100%;
+    padding: 0.65rem 0.8rem;
     font-size: $type-size-7;
-    line-height: 1.35;
+    line-height: 1.45;
     color: $text-color;
     text-decoration: none;
     background: mix(#fff, $primary-color, 90%);
     border: 1px solid mix(#fff, $primary-color, 70%);
-    border-radius: 999px;
+    border-radius: 0.5rem;
   }
 
   a:hover {
