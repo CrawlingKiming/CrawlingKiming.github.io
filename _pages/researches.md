@@ -3,6 +3,7 @@ title: "Research"
 layout: posts
 permalink: /Researches/
 author_profile: true
+classes: wide
 description: "Research by Dongkyu Derek Cho on reliable reinforcement learning, safe and personalized LLMs, and Bayesian inference and uncertainty quantification."
 ---
 

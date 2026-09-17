@@ -3,6 +3,7 @@ title: "About Me"
 layout: posts
 permalink: /about/
 author_profile: true
+classes: wide
 ---
 I am a Ph.D. candidate in Statistical Science at Duke University. My research is at the intersection of reinforcement learning, large language models, and Bayesian inference. I aim to build learning systems that are statistically grounded, stable to optimize, and useful in real decision-making settings.
 

@@ -3,6 +3,7 @@ title: "Professional Experience"
 layout: posts
 permalink: /experience/
 author_profile: true
+classes: wide
 ---
 
 ## Apple Foundation Models | Research Intern
