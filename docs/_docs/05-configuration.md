@@ -764,7 +764,7 @@ yandex_site_verification: "2132801JL"
 
 #### Baidu
 
-There are several ways to verify site ownership — the easiest is adding an authentication code to your config file.
+There are several ways to verify site ownership. The easiest is adding an authentication code to your config file.
 
 Copy and paste the string inside of `content`:
 
