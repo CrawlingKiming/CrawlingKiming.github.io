@@ -665,3 +665,107 @@ body {
     border-color: mix(#fff, $primary-color, 45%);
   }
 }
+
+/* Professional experience shares the research cards' surfaces and spacing. */
+.experience-card {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 1.25rem;
+
+  @include breakpoint($medium) {
+    grid-template-columns: minmax(10.5rem, 0.75fr) minmax(0, 1.75fr);
+    column-gap: 2rem;
+    align-items: start;
+  }
+}
+
+.experience-card__header {
+  min-width: 0;
+
+  h2 {
+    margin: 0 0 0.65rem;
+    padding: 0;
+    border: 0;
+    font-size: $type-size-4;
+    line-height: 1.25;
+  }
+
+  p {
+    margin: 0;
+  }
+}
+
+.experience-card__logo,
+.experience-card__monogram {
+  display: flex;
+  align-items: center;
+  height: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.experience-card__logo img {
+  display: block;
+  max-width: 4rem;
+  max-height: 2.5rem;
+  object-fit: contain;
+}
+
+.experience-card__monogram {
+  color: $primary-color;
+  font-size: $type-size-5;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+
+.experience-card__role {
+  font-size: $type-size-6;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.experience-card__header .experience-card__dates {
+  margin-top: 0.35rem;
+  color: mix(#fff, $text-color, 20%);
+  font-size: $type-size-7;
+  line-height: 1.6;
+}
+
+.experience-card__content {
+  min-width: 0;
+
+  > p {
+    margin: 0;
+    line-height: 1.7;
+  }
+}
+
+.experience-card__figure {
+  display: block;
+  margin: 1.25rem 0 0;
+  padding: 0.75rem;
+  background: mix(#fff, $primary-color, 96%);
+  border: 1px solid rgba($border-color, 0.85);
+  border-radius: 0.5rem;
+
+  img {
+    display: block;
+    width: 100%;
+    max-height: 13rem;
+    margin: 0 auto;
+    object-fit: contain;
+  }
+
+  figcaption {
+    margin: 0.6rem 0 0;
+    color: $text-color;
+    font-size: $type-size-7;
+    text-align: center;
+  }
+}
+
+.cv-preview {
+  display: block;
+  width: 100%;
+  border: 1px solid $border-color;
+  border-radius: 0.5rem;
+}

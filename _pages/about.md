@@ -13,4 +13,6 @@ Before Duke, I earned an M.A. in Statistics and Data Science and dual degrees in
 
 Please visit **Research & Presentation** and **Projects** to learn more. For my complete CV:
 
-<embed src="/assets/pdf/Derek_Cho_2026_RL_RESUME.pdf" type="application/pdf" height="400">
+<p><a href="/assets/pdf/Derek_Cho_2026_RL_RESUME.pdf" download="Derek_Cho_2026_RESUME.pdf">Download CV (PDF)</a></p>
+
+<embed class="cv-preview" src="/assets/pdf/Derek_Cho_2026_RL_RESUME.pdf" type="application/pdf" width="100%" height="640" title="Dongkyu Derek Cho CV">
